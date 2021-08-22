@@ -1,15 +1,24 @@
 import Back3 from './img/Back3.jpeg'
-import back5 from './img/back5.jpg'
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import './Carro.css'
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Carro() {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [])
+
+
     return (
         <div>
-            <Carousel className="Carro" variant="dark">
+            <Carousel data-aos="fade-up" className="Carro" variant="dark">
                 <Carousel.Item>
                     <img
+                        style={{objectFit: "cover"}}
                         className="d-block w-100 Carro-img"
                         src={Back3}
                         alt="First slide"
@@ -26,8 +35,6 @@ export default function Carro() {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h5>Accesorios</h5>
-                        <p style={{color: "white"}}></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -37,8 +44,7 @@ export default function Carro() {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
