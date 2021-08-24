@@ -4,15 +4,34 @@ import Carro from './components/Carro'
 import NavBar from './components/NavBar'
 import Inicio from './components/Inicio'
 import Footer from './components/Footer'
+import SProductos from './Pages/SProductos';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+
 function App() {
   return (
     <div className="App">
 
-      <NavBar />
+      <Router>
 
-      <Carro />
+        <Route>
+          <ScrollToTop></ScrollToTop>
+        </Route>
 
-      <Inicio />
+        <NavBar />
+
+        <Switch>
+
+          <Route path="/" exact>
+            <Carro />
+
+            <Inicio />
+          </Route>
+          <Route path="/productos" exact>
+            <SProductos />
+          </Route>
+        </Switch>
+      </Router>
 
       <Footer />
 
