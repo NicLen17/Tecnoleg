@@ -39,8 +39,8 @@ export default function Footer() {
           <Form action="#" method="post">
 
             <input type="text" name="email" placeholder="Email" />
-            <textarea name="message" placeholder="Message"></textarea>
-            <button>Send</button>
+            <textarea name="message" placeholder="Mensaje"></textarea>
+            <button>Enviar</button>
 
           </Form>
 

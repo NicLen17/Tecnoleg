@@ -23,11 +23,10 @@ function OffCanvasExample({ name, ...props }) {
             </Button>
             <Offcanvas show={show} onHide={handleClose} {...props}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                    <Offcanvas.Title>Menu</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the elements you
-                    have chosen. Like, text, images, lists, etc.
+                    Prueba 1
                 </Offcanvas.Body>
             </Offcanvas>
         </>
@@ -43,5 +42,3 @@ export default function Example() {
         </>
     );
 }
-
-render(<Example />);
