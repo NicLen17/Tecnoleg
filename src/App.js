@@ -2,11 +2,11 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carro from './components/Carro'
 import NavBar from './components/NavBar'
-import Inicio from './components/Inicio'
 import Footer from './components/Footer'
 import SProductos from './Pages/SProductos';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import SCards from './components/SCards';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/" exact>
             <Carro />
 
-            <Inicio />
+            <SCards />
           </Route>
           <Route path="/productos" exact>
             <SProductos />

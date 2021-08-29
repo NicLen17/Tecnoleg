@@ -1,6 +1,6 @@
 .Carro-img { 
-    height: 700px; 
-    width: 1600px !important; 
+    height: 600px; 
+    width: 1400px !important; 
     display: flex;
     justify-content: center;
     background-color: white;
@@ -12,5 +12,4 @@
 
 .Carro {
     margin: auto !important;
-    box-shadow: black 10px;
 }
