@@ -5,6 +5,7 @@
   background-size: cover;
   background-color: white;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 .App-logo {

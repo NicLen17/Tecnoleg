@@ -169,11 +169,12 @@ section {
 }
 
 .footer-distributed form button {
-    box-shadow: 0 1px 5px 3px rgb(108, 156, 158);
-    border-radius: 3px;
+    border-radius: 0px;
+    background-color: white;
+    border: rgb(110, 167, 173) solid 1px;
+    box-shadow: rgb(110, 167, 173) 3px -3px 4px;
     background-color: #ffffff;
     color: #000000;
-    border: 0;
     padding: 15px 50px;
 
     float: right;
@@ -182,10 +183,18 @@ section {
 }
 
 .footer-distributed form button:hover {
-    background-color:  rgb(87, 156, 158);
-    color: white;
+    box-shadow: rgb(110, 167, 173) -2px 3px 4px;
 }
-/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 800px) {
+    .footer-distributed .footer-icons a {
+        margin: auto !important;
+        display: inline-block !important;
+        margin-bottom: 15px !important;
+        text-align: center !important;
+        margin-left: 45px !important;
+    }
+}
 
 @media (max-width: 1000px) {
     .footer-distributed {
@@ -198,7 +207,7 @@ section {
 
     .footer-distributed form input,
     .footer-distributed form textarea {
-        width: 250px;
+        width: 308px;
     }
 
     .footer-distributed form button {

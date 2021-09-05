@@ -23,7 +23,7 @@ export default function SCards() {
                         Categorias populares
                     </p>
                 </div>
-                <div className="horizontal-card">
+                <div data-aos-delay="2400" data-aos="fade-up-left" className="horizontal-card">
                     <div className="h-cardcont">
                         <p className="h-cardtitulo">Accesorios para celular</p>
                         <p>
@@ -34,7 +34,7 @@ export default function SCards() {
                         <img src="https://www.belkin.com/medias/belkin-category-banner-power-charging-banks-768x400-v01-r01-us.jpg?context=bWFzdGVyfHJvb3R8MTM3ODI5fGltYWdlL2pwZWd8aDdmL2gzZS84ODk5MjAxMjA0MjU0LmpwZ3wwZDUwYTBjOTRmMWJjOWI2YmM4ODg1NDhlZWFkNzgyNGFjMzNlYmY0NjRkZTg1Yjg2MjYyYmZiZmM0YjQxOGI3" alt="" />
                     </div>
                 </div>
-                <div data-aos="fade-up-left" className="horizontal-card2">
+                <div data-aos-duration="2400" data-aos="fade-up-left" className="horizontal-card2">
                     <div className="h-cardimg">
                         <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/017/775/products/balanza-digital-5kg1-5c2671d8717979403216111512589822-640-0.png" alt="" />
                     </div>
@@ -45,7 +45,7 @@ export default function SCards() {
                         </p>
                     </div>
                 </div>
-                <div data-aos="fade-up-right" className="horizontal-card">
+                <div data-aos-delay="2400" data-aos="fade-up-right" className="horizontal-card">
                     <div className="h-cardcont">
                         <p className="h-cardtitulo">Perifericos para PC</p>
                         <p>
@@ -56,7 +56,7 @@ export default function SCards() {
                         <img src="https://http2.mlstatic.com/D_NQ_NP_725297-MLA44405772200_122020-O.jpg" alt="" />
                     </div>
                 </div>
-                <div data-aos="fade-up-left" className="horizontal-card2">
+                <div data-aos-delay="2400" data-aos="fade-up-left" className="horizontal-card2">
                     <div className="h-cardimg">
                         <img src="https://ryrinformatica.com/wp-content/uploads/2021/05/21370.jpg" alt="" />
                     </div>

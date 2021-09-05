@@ -17,7 +17,7 @@ function OffCanvasExample({ name, ...props }) {
 
     return (
         <>
-            <Button variant="primary" onClick={toggleShow} className="me-2">
+            <Button className="global-btn me-2" variant="global-btn" onClick={toggleShow}>
                 {name}
             </Button>
             <Offcanvas show={show} onHide={handleClose} {...props}>

@@ -1,15 +1,47 @@
-.Carro-img { 
-    height: 600px; 
-    width: 1400px !important; 
+.Carro-img {
+    height: 100%;
+    max-height: 750px !important;
+    min-height: 750px !important;
+    width: 100% !important;
     display: flex;
     justify-content: center;
     background-color: white;
-    border-radius: 10px;
     border: rgb(153, 171, 173) solid 2px;
     margin: auto !important;
+    margin-right: 15px !important;
     margin-top: 145px !important;
 }
 
-.Carro {
-    margin: auto !important;
+@media only screen and (max-width: 1200px) {
+    .Carro-img {
+        min-height: 500px !important;
+        max-height: 500px !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        object-fit: none;
+    }
 }
+
+@media only screen and (max-width: 992px) {
+    .Carro-img {
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .Carro-img {
+        object-fit: cover !important;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .Carro-img {
+        min-height: 380px !important;
+        max-height: 380px !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+}
+
+
