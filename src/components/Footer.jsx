@@ -26,7 +26,7 @@ export default function Footer() {
 
             <a href="https://www.facebook.com/brunotecnoleg"><img style={{width: "50px", height: "50px"}} src="https://icongr.am/fontawesome/facebook-official.svg?size=128&color=355bd0" alt="" /></a>
             <a href="https://www.instagram.com/tecnoleg_/"><img style={{width: "50px", height: "50px"}} src="https://icongr.am/fontawesome/instagram.svg?size=128&color=ff24f8" alt="" /></a>
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D543816776773&e=ATMUuEuLFvLJwUOSGi-gDSzF__4DNb9UlAntjSJoVx7oi2enJcnBsAZPO5c9zC95zDpSRoF9Z-tsb8shAHZQBw&s=1"><img style={{width: "50px", height: "50px"}} src="https://icongr.am/fontawesome/whatsapp.svg?size=30&color=1dcd3b" alt="" /></a>
+            <a href="https://api.whatsapp.com/send?phone=543816776773"><img style={{width: "50px", height: "50px"}} src="https://icongr.am/fontawesome/whatsapp.svg?size=30&color=1dcd3b" alt="" /></a>
 
           </div>
 

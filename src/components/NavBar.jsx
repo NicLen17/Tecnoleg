@@ -24,8 +24,8 @@ export default function NavBar() {
                             <Nav.Link to="/" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="">Inicio</Nav.Link>
                             <Nav.Link to="/productos" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#contacto">Categorias</Nav.Link>
                             <img className="logo-nav" style={{ width: "50px", height: "50px", marginTop: "3px", marginBottom: "3px" }} src={LogoNav} alt="" />
-                            <Nav.Link style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#link">Carrito</Nav.Link>
-                            <Nav.Link style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#galeria">Login</Nav.Link>
+                            <Nav.Link to="/contacto" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#link">Contacto</Nav.Link>
+                            <Nav.Link style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#galeria">Carrito</Nav.Link>
                             {/* <img style={{ width: "50px", height: "50px", marginBottom: "3px", marginRight: "500px" }} src="https://icongr.am/clarity/shopping-cart.svg?size=128&color=000000" alt="" /> */}
                         </Nav>
                     </Navbar.Collapse>

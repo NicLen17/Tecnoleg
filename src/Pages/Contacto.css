@@ -1,0 +1,31 @@
+.Contacto-cont {
+    margin-top: 145px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    border: rgb(110, 167, 173) solid 2px ;
+}
+
+.Contacto-borde {
+    width: 850px;
+    height: 600px;
+    background-color: rgb(110, 167, 173);
+    border-radius: 3px;
+}
+
+.Contacto-img1 {
+    border-left: rgb(110, 167, 173) solid 2px ;
+    border-right: rgb(110, 167, 173) solid 2px ;
+    border-radius: 5px;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.Contacto-form {
+    margin-top: 55px !important;
+    text-align: start;
+    
+    padding: 18px 18px 18px 18px;
+    width: 600px;
+}

@@ -7,6 +7,7 @@ import SProductos from './Pages/SProductos';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import SCards from './components/SCards';
+import Contacto from './Pages/Contacto'
 
 function App() {
   return (
@@ -26,10 +27,16 @@ function App() {
             <Carro />
 
             <SCards />
+
           </Route>
           <Route path="/productos" exact>
             <SProductos />
           </Route>
+
+          <Route path="/contacto" exact>
+            <Contacto />
+          </Route>
+
         </Switch>
       </Router>
 

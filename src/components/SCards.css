@@ -253,12 +253,14 @@
     .horizontal-card {
         margin: auto !important;
         margin-bottom: 30px !important;
+        width: 310px;
     }
 }
 
 @media only screen and (max-width: 375px) {
     .horizontal-card2 {
         margin-bottom: 30px !important;
+        width: 310px;
     }
 }
 
@@ -274,3 +276,10 @@
         box-shadow: teal 2pc solid;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .card-cont {
+        width: 15rem !important;
+    }
+}
+
