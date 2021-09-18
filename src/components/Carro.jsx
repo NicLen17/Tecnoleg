@@ -24,8 +24,6 @@ export default function Carro() {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h5>TecnoLeg</h5>
-                        <p>Lo mejor de tecnologia al mejor precio</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>

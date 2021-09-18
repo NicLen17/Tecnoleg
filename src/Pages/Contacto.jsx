@@ -24,9 +24,6 @@ export default function Contacto() {
 
     return (
         <div className="Contacto-cont">
-            <div className="Contacto-borde">
-                <img className="Contacto-img1" src="https://img.freepik.com/foto-gratis/pongase-contacto-nosotros-personas-linea-directa-atencion-al-cliente-conectar_36325-1640.jpg?size=626&ext=jpg" alt="" />
-            </div>
             <div className="Contacto-form">
                 <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)}>
                     <Form.Group

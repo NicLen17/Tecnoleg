@@ -1,3 +1,32 @@
 .body-pro {
     height: 100vh;
 }
+
+.cards-p {
+    display: flex;
+    justify-content: center;
+}
+
+.card-cont2 {
+    border: rgb(153, 171, 173) solid 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 70px;
+    margin-left: 70px;
+    transition: 0.2s;
+    cursor: pointer;
+    text-align: start;
+}
+
+.card-cont2:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 4px 5px 15px;
+}
+
+.cardp-imgcont {
+    display: flex;
+    justify-content: center !important;
+}
+
+.cards-pimg {
+    max-width: 300px;
+}

@@ -39,8 +39,8 @@
     .Carro-img {
         min-height: 380px !important;
         max-height: 380px !important;
-        max-width: 100% !important;
-        min-width: 100% !important;
+        max-width: 200% !important;
+        min-width: 200% !important;
     }
 }
 
