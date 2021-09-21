@@ -12,7 +12,7 @@
 }
 
 .inicio-titulo p {
-    border-bottom: rgb(153, 171, 173) solid 1px;
+    border-bottom: rgb(110, 167, 173) solid 1px;
     margin-left: 350px;
     margin-right: 350px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 0px;
@@ -30,7 +30,7 @@
 }
 
 .inicio-titulo2 p {
-    border-bottom: rgb(153, 171, 173) solid 1px;
+    border-bottom: rgb(110, 167, 173) solid 1px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 0px;
 }
 
@@ -45,7 +45,8 @@
 }
 
 .card-cont {
-    border: rgb(153, 171, 173) solid 1px;
+    border: rgb(110, 167, 173) solid 2px;
+    background-color: white !important;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 50px;
@@ -59,7 +60,7 @@
 }
 
 .card-img {
-    border: rgb(153, 171, 173) solid 1px;
+    border: rgb(110, 167, 173) solid 1px;
     height: 300px;
     object-fit: cover;
     cursor: pointer;
@@ -70,11 +71,11 @@
     border-radius: 0px;
     background-color: white;
     border: rgb(110, 167, 173) solid 1px;
-    box-shadow: rgb(110, 167, 173) 3px -3px 4px;
+    box-shadow: rgb(110, 167, 173) -2px 3px 4px;
 }
 
 .global-btn:hover {
-    box-shadow: rgb(110, 167, 173) -2px 3px 4px;
+    box-shadow: rgb(110, 167, 173) 3px -3px 4px;
 }
 
 .card-img:hover {
@@ -96,11 +97,12 @@
 }
 
 .horizontal-card {
+    background-color: white !important;
     margin-left: 330px !important;
     margin-bottom: 60px !important;
     width: 1150px;
     height: 180px;
-    border: rgb(153, 171, 173) solid 1px;
+    border: rgb(110, 167, 173) solid 1px;
     border-radius: 10px;
     display: flex;
     margin: auto;
@@ -110,11 +112,12 @@
 }
 
 .horizontal-card2 {
+    background-color: white !important;
     margin-right: 330px !important;
     margin-bottom: 60px !important;
     width: 1150px;
     height: 180px;
-    border: rgb(153, 171, 173) solid 1px;
+    border: rgb(110, 167, 173) solid 1px;
     border-radius: 10px;
     display: flex;
     margin: auto;

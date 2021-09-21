@@ -1,10 +1,11 @@
 import React from 'react'
 import './SProductos.css'
 import Example from '../components/MenuLateral'
-import { Card, CardGroup } from 'react-bootstrap'
+import { Card, CardGroup, Form, FormControl } from 'react-bootstrap'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Button from '@restart/ui/esm/Button';
 
 export default function SProductos() {
 
@@ -16,7 +17,19 @@ export default function SProductos() {
     return (
         <div className="body-pro">
             <div style={{ marginTop: "150px" }}>
-                <Example />
+                <div className="nav-filtro">
+                    <Form className="d-flex nav-form">
+                        <FormControl
+                            type="search"
+                            placeholder="Search"
+                            className="mr-2"
+                            aria-label="Search"
+                            style={{ width: "350px" }}
+                        />
+                        <Button className="global-btn" variant="outline-success">Buscar</Button>
+                        <Example />
+                    </Form>
+                </div>
                 <div>
                     <CardGroup className="cards-p">
                         <div data-aos="fade-up" className="card-flex">

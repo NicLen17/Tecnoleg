@@ -3,7 +3,7 @@ import { Button, Offcanvas } from 'react-bootstrap';
 
 const options = [
     {
-        name: 'Enable body scrolling',
+        name: 'Filtrar',
         scroll: true,
         backdrop: false,
     },

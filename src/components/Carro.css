@@ -6,7 +6,9 @@
     display: flex;
     justify-content: center;
     background-color: white;
-    border: rgb(153, 171, 173) solid 2px;
+    border: rgb(110, 167, 173) solid 4px;
+    border-left: none;
+    border-right: none;
     margin: auto !important;
     margin-right: 15px !important;
     margin-top: 145px !important;

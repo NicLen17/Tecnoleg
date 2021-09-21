@@ -1,9 +1,16 @@
 import React from 'react'
 import './Contacto.css'
 import { Form, Button } from "react-bootstrap";
-import { useState  } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Contacto() {
+
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    }, [])
 
     const [validated, setValidated] = useState(false);
     const [input, setInput] = useState({});
@@ -23,7 +30,7 @@ export default function Contacto() {
     }
 
     return (
-        <div className="Contacto-cont">
+        <div data-aos="fade-up" className="Contacto-cont">
             <div className="Contacto-form">
                 <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)}>
                     <Form.Group
@@ -31,7 +38,7 @@ export default function Contacto() {
                         controlId="exampleForm.ControlInput1"
                     >
                         <Form.Label>Nombre y Apellido</Form.Label>
-                        <Form.Control className="labelform" type="name" placeholder="Nombre y Apellido" required name="nombreyapellido" maxLength="50" onChange={(e) => handleChange(e)} />
+                        <Form.Control className="labelform" type="name" placeholder="Ingresar su nombre" required name="nombreyapellido" maxLength="50" onChange={(e) => handleChange(e)} />
                         <Form.Control.Feedback type="invalid">
                             Se requiere nombre y apellido!
                         </Form.Control.Feedback>
@@ -69,7 +76,7 @@ export default function Contacto() {
                         </Form.Control.Feedback>
                         <Form.Control.Feedback>Recibido</Form.Control.Feedback>
                     </Form.Group>
-                    <Button className="msgbut"
+                    <Button className="global-btn mt-5 mb-5"
                         variant="msgbut"
                         type="submit"
                         style={{ marginTop: "10px", width: "100%" }}

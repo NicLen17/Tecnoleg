@@ -22,7 +22,7 @@ export default function NavBar() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
                             <Nav.Link to="/" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="">Inicio</Nav.Link>
-                            <Nav.Link to="/productos" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#contacto">Categorias</Nav.Link>
+                            <Nav.Link to="/productos" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#contacto">Productos</Nav.Link>
                             <img className="logo-nav" style={{ width: "50px", height: "50px", marginTop: "3px", marginBottom: "3px" }} src={LogoNav} alt="" />
                             <Nav.Link to="/contacto" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#link">Contacto</Nav.Link>
                             <Nav.Link to="/carrito" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#galeria">Carrito</Nav.Link>

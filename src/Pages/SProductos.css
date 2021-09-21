@@ -8,7 +8,7 @@
 }
 
 .card-cont2 {
-    border: rgb(153, 171, 173) solid 2px;
+    border: rgb(110, 167, 173) solid 2px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 70px;
@@ -29,4 +29,18 @@
 
 .cards-pimg {
     max-width: 300px;
+    border-bottom: rgb(110, 167, 173) solid 1px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.nav-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-form {
+    display: flex;
+    flex-wrap: wrap;
 }

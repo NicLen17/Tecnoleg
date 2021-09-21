@@ -1,17 +1,13 @@
 .Contacto-cont {
-    margin-top: 145px;
+    margin-top: 165px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
     border: rgb(110, 167, 173) solid 2px ;
-}
-
-.Contacto-borde {
-    width: 850px;
-    height: 600px;
-    background-color: rgb(110, 167, 173);
-    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        background-color: white;
 }
 
 .Contacto-img1 {
@@ -25,7 +21,16 @@
 .Contacto-form {
     margin-top: 55px !important;
     text-align: start;
-    
     padding: 18px 18px 18px 18px;
     width: 600px;
+}
+
+.labelform {
+    border: none;
+    border-bottom: rgb(110, 167, 173) solid 2px ;
+    transition: 0.2s;
+}
+
+.labelform:hover {
+    background-color: rgba(110, 167, 173, 0.363)
 }
