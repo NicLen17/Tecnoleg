@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import SCards from './components/SCards';
 import Contacto from './Pages/Contacto'
 import Carrito from './Pages/Carrito'
+import Pindividual from './components/Pindividual';
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
 
           <Route path="/carrito" exact>
             <Carrito />
+          </Route>
+
+          <Route path="/individual" exact>
+            <Pindividual />
           </Route>
 
         </Switch>

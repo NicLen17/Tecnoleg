@@ -7,7 +7,7 @@
     text-align: left;
     padding: 50px 60px 40px;
     overflow: hidden;
-    border-top:rgb(110, 167, 173) solid 4px;
+    border-top: rgb(110, 167, 173) solid 4px;
 }
 
 section {
@@ -56,7 +56,7 @@ section {
     transition: 0.2s;
 }
 
-.footer-distributed .footer-links a:hover{
+.footer-distributed .footer-links a:hover {
     color: blue !important;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -91,12 +91,12 @@ section {
     text-align: center;
     line-height: 35px;
 
-    margin-left:  69px;
+    margin-left: 69px;
     margin-bottom: 5px;
     transition: 0.3s;
 }
 
-.footer-distributed .footer-icons a:hover{
+.footer-distributed .footer-icons a:hover {
     color: blue !important;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -145,6 +145,14 @@ section {
     transition: 0.2s;
 }
 
+.footer-distributed form input:hover {
+    background-color: rgba(110, 167, 173, 0.363);
+}
+
+.footer-distributed form textarea:hover {
+    background-color: rgba(110, 167, 173, 0.363);
+}
+
 .footer-distributed ::-webkit-input-placeholder {
     color: #5c666b;
 }
@@ -179,7 +187,6 @@ section {
 
     float: right;
     transition: 0.2s;
-
 }
 
 .footer-distributed form button:hover {

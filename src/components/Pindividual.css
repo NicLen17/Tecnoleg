@@ -1,0 +1,23 @@
+.individual-body {
+    width: 1600px;
+    height: 700px;
+    background-color: white;
+    margin-top: 175px !important;
+    margin: auto;
+    border: rgb(110, 167, 173) solid 2px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.individual-img-cont {
+    margin-right: 850px !important;
+    margin: auto;
+    width: 600px;
+    height: 500px;
+}
+
+.individual-img { 
+    width: 600px;
+    height: 500px;
+    border: rgb(110, 167, 173) solid 2px
+}

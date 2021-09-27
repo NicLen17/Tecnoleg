@@ -44,3 +44,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.busqueda-productos {
+    border: none;
+    border: rgb(110, 167, 173) solid 1px;
+}
+
+.busqueda-productos:hover {
+    background-color: rgba(110, 167, 173, 0.363);
+}

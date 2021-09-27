@@ -22,9 +22,9 @@ export default function SProductos() {
                         <FormControl
                             type="search"
                             placeholder="Search"
-                            className="mr-2"
+                            className="mr-2 busqueda-productos"
                             aria-label="Search"
-                            style={{ width: "350px" }}
+                            style={{ width: "450px" }}
                         />
                         <Button className="global-btn" variant="outline-success">Buscar</Button>
                         <Example />
