@@ -53,3 +53,20 @@
 .busqueda-productos:hover {
     background-color: rgba(110, 167, 173, 0.363);
 }
+
+.module {
+    width: 250px;
+    margin: 0 0 1em 0;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.module p {
+    margin: 0;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

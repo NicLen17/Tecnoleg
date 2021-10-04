@@ -43,7 +43,7 @@ function App() {
             <Carrito />
           </Route>
 
-          <Route path="/individual" exact>
+          <Route path="/individual/:id" exact>
             <Pindividual />
           </Route>
 

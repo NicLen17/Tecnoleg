@@ -1,19 +1,22 @@
 import React from 'react'
 import './Contacto.css'
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import axios from 'axios';
 
 export default function Contacto() {
 
-    useEffect(() => {
-        Aos.init({ duration: 1500 });
-    }, [])
-
     const [validated, setValidated] = useState(false);
     const [input, setInput] = useState({});
+    const [alert, setAlert] = useState("");
+    const [alertSuccess, setalertSuccess] = useState("")
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [])
 
     const handleSubmit = async (e) => {
         const formulario = e.currentTarget;
@@ -22,8 +25,22 @@ export default function Contacto() {
         if (formulario.checkValidity() === false) {
             return e.stopPropagation();
         }
+        try {
+            await axios.post("/mensajes", input);
+            formulario.reset()
+            setalertSuccess("Mensaje enviado. Gracias en breve le responderemos");
+            setValidated(false);
+        } catch (error) {
+            error.response.data.msg
+                ? setAlert(error.response.data.msg)
+                : setAlert("este error");
+        }
+        setTimeout(() => {
+            setAlert("");
+        }, 5000);
     };
     const handleChange = (e) => {
+        setAlert("");
         const { name, value } = e.target;
         const mensaje = { ...input, [name]: value };
         setInput(mensaje);
@@ -32,6 +49,8 @@ export default function Contacto() {
     return (
         <div data-aos="fade-up" className="Contacto-cont">
             <div className="Contacto-form">
+            {alert && <Alert variant="danger">{alert}</Alert>}
+                {alertSuccess && <Alert variant="success">{alertSuccess}</Alert>}
                 <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)}>
                     <Form.Group
                         style={{ marginTop: "15px" }}
