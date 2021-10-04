@@ -26,35 +26,31 @@ export default function NavBar({
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
                             <img className="logo-nav" style={{ width: "50px", height: "50px", marginTop: "5px", marginBottom: "5px", marginLeft: "5px" }} src={LogoNav} alt="" />
-                            <Nav.Link to="/" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="">Inicio</Nav.Link>
-                            <Nav.Link to="/productos" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#contacto">Productos</Nav.Link>
-                            <Nav.Link to="/contacto" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#link">Contacto</Nav.Link>
-                            <Nav.Link to="/carrito" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="#galeria">Carrito</Nav.Link>
-                            <Nav.Link to="/login" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" href="">Login</Nav.Link>
-                            {/* <img style={{ width: "50px", height: "50px", marginBottom: "3px", marginRight: "500px" }} src="https://icongr.am/clarity/shopping-cart.svg?size=128&color=000000" alt="" /> */}
-                        </Nav>
-                        <br />
-                    </Navbar.Collapse>
-                    <div>
-                        <Nav>
+                            <Nav.Link to="/" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav mt-1" href="">Inicio</Nav.Link>
+                            <Nav.Link to="/productos" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav mt-1" href="#contacto">Productos</Nav.Link>
+                            <Nav.Link to="/contacto" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav mt-1" href="#link">Contacto</Nav.Link>
+                            <Nav.Link to="/carrito" exact as={NavLink} style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav mt-1" href="#galeria">Carrito</Nav.Link>
+                            <Nav.Link to="/login" exact as={NavLink} className="efecto-nav" href=""><img style={{ width: "40px", height: "40px", marginTop: "5px", marginBottom: "5px", marginLeft: "5px", marginRight:"5px" }} src="https://icongr.am/fontawesome/user.svg?size=35&color=currentColor" alt="" /></Nav.Link>
+                            
                             {userName && userCategory && (
-                                <Nav.Link href="admin" style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav">
+                                <Nav.Link href="admin" style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav mt-1">
                                     Administracion
                                 </Nav.Link>
                             )}
                             {userName && (
-                                <Nav.Link style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav">
+                                <Nav.Link style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav mt-1">
                                     {userName}
                                 </Nav.Link>
                             )}
                             {/* muestra el nombre del usuario, con la codicion que si no está logueado no muestre nada */}
                             {userName && (
-                                <Button style={{ paddingTop: "14px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav" variant="" onClick={logout}>
+                                <Button style={{ paddingTop: "5px", paddingRight: "50px", paddingLeft: "50px" }} className="efecto-nav mt-0" variant="" onClick={logout}>
                                     Cerrar Sesión
                                 </Button>
                             )}
                         </Nav>
-                    </div>
+                        <br />
+                    </Navbar.Collapse>
                 </div>
             </Navbar>
         </div>

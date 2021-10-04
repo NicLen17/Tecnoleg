@@ -33,7 +33,7 @@ export default function SProductos() {
                             aria-label="Search"
                             style={{ width: "450px" }}
                         />
-                        <Button className="global-btn" variant="outline-success">Buscar</Button>
+                        <Button className="global-btn me-3 " variant="outline-success"><img style={{width:"35px", height:"35px"}} src="https://icongr.am/fontawesome/search.svg?size=128&color=00000" alt="" /></Button>
                         <Example />
                     </Form>
                 </div>

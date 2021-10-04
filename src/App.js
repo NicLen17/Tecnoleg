@@ -9,7 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import SCards from './components/SCards';
 import Contacto from './Pages/Contacto'
 import Carrito from './Pages/Carrito'
-import Pindividual from './components/Pindividual';
+import Pindividual from './components/PIndividual';
 import Seccion404 from './components/Seccion404';
 import Admin from './Pages/Admin';
 import Register from "./Pages/Register";

@@ -49,6 +49,7 @@ export default function Contacto() {
     return (
         <div data-aos="fade-up" className="Contacto-cont">
             <div className="Contacto-form">
+                <h1 className="mb-5">Contacanos!</h1>
             {alert && <Alert variant="danger">{alert}</Alert>}
                 {alertSuccess && <Alert variant="success">{alertSuccess}</Alert>}
                 <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)}>

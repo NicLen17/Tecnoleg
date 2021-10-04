@@ -34,15 +34,14 @@ export default function Footer() {
 
         <div className="footer-right">
 
-          <p className="mt-3">Contacto:</p>
+          <p className="mt-3">Direccion:</p> <br />
+          <p>C. República de Francia 64, Tucumán</p>
 
-          <Form action="#" method="post">
+          <div className="mapa-footer mt-2" action="#" method="post">
 
-            <input type="text" name="email" placeholder="Email" />
-            <textarea name="message" placeholder="Mensaje"></textarea>
-            <button>Enviar</button>
+            <a href="https://www.google.com/maps/dir/-26.7705179,-65.2263446/tecnoleg/@-26.8029971,-65.2341758,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94225c034dbd42a3:0x3537b867703ff27f!2m2!1d-65.1958326!2d-26.8311852"> <img className="mapa-img" style={{width: "350px", height: "200px"}} src="https://img.lagaceta.com.ar/fotos/notas/2016/07/27/tmb1_691869_201607261953120000001.jpg" alt="" /> </a>
 
-          </Form>
+          </div>
 
         </div>
 

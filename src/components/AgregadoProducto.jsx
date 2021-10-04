@@ -115,7 +115,6 @@ export default function AgregadoProducto({ productos }) {
                                                 placeholder="$$$"
                                                 className="labelform-register"
                                                 required
-                                                min="0"
                                             />
                                             <Form.Control.Feedback type="invalid">
                                                 Precio obligatorio!
@@ -131,7 +130,7 @@ export default function AgregadoProducto({ productos }) {
                                                     as="textarea"
                                                     placeholder="Caracteristicas principales del producto"
                                                     aria-describedby="inputGroupPrepend"
-                                                    className="labelform-register"
+                                                    className="labelform-register mb-4"
                                                     required
                                                 />
                                                 <Form.Control.Feedback type="invalid">
