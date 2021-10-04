@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, NavLink } from 'react-router-dom';
 import { Button, Alert } from 'react-bootstrap';
-import './PIndividual.css';
+import './Pindividual.css';
 import axios from 'axios';
 import Aos from "aos";
 import "aos/dist/aos.css";
