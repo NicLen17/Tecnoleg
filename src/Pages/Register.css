@@ -1,0 +1,39 @@
+.registerform {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.register-titulo{
+    height: 80px;
+    border-bottom: cadetblue 1px solid ;
+    text-align: center;
+}
+
+.registercontent {
+    border-radius: 8px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    height: 680px;
+    width: 800px;
+    border: rgb(110, 167, 173) 1px solid !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 100%;
+    border-top: solid rgb(127, 189, 196) 6px;
+}
+
+.reginputconteiner {
+    margin-top: 20px;
+}
+
+.labelform-register {
+    margin: auto;
+    border: none;
+    border-bottom: rgb(110, 167, 173) solid 2px ;
+    transition: 0.2s;
+}
+
+.labelform-register:hover {
+    background-color: rgba(110, 167, 173, 0.363)
+}

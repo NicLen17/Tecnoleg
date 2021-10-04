@@ -4,7 +4,7 @@ import axios from "axios";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-axios.defaults.baseURL = "https://tecnoleg18.herokuapp.com/";
+axios.defaults.baseURL = "https://tecnoleg18.herokuapp.com/api";
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,74 @@
+.agregadocontent {
+    text-align: start;
+    font-family: "Roboto", sans-serif;
+}
+
+.input {
+    background: none !important;
+}
+
+.selectsa {
+    font-family: "Roboto", sans-serif;
+    justify-content: space-evenly !important;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.registerformagregado {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.text-whiteagregado {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    border-radius: 10px !important;
+}
+
+.registercontent-a {
+    border-radius: 8px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    height: 680px;
+    width: 800px;
+    border: rgb(110, 167, 173) 1px solid !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 100%;
+    border-top: solid rgb(127, 189, 196) 6px;
+}
+
+.reginputconteineragregado {
+    margin-top: 20px;
+}
+
+.registerlabelagregado {
+    background: none;
+    border: none;
+    border-bottom: black 2px solid;
+    transition: 0.3s;
+}
+
+.registerlabel:hover {
+    border-bottom: rgb(255, 255, 255) 2px solid;
+}
+
+.registerbut {
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-bottom: rgb(0, 0, 0) 2px solid;
+    margin-top: 20px;
+    width: 180px;
+    -webkit-box-shadow: 5px 5px 10px 3px #000000;
+    box-shadow: 5px 5px 10px 3px #000000;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.registerbut:hover {
+    background-color: black;
+    color: white;
+    border-bottom: rgb(255, 255, 255) 2px solid;
+}
