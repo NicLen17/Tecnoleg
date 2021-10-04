@@ -331,7 +331,7 @@ function Admin() {
             </div>
             {
                 <Modal show={show} backdrop="static" keyboard={false}>
-                        <p style={{ marginTop: "30px", fontSize: "35px", letterSpacing: "5px" }} className="register-titulo">Editar {productEncontrado.marca} {productEncontrado.modelo}</p>
+                    <p style={{ marginTop: "30px", fontSize: "35px", letterSpacing: "5px" }} className="register-titulo">Editar {productEncontrado.marca} {productEncontrado.modelo}</p>
                     <Modal.Body style={{ width: "100%" }}>
                         <Container>
                             {alert && <Alert variant="danger">{alert}</Alert>}
@@ -452,11 +452,11 @@ function Admin() {
                                         className="global-btn"
                                         aria-label="Default select example"
                                     >
-                                        <option defaultValue>{productEncontrado.categoria} </option>
-                                        <option value="Celular">Celular</option>
-                                        <option value="Tablet">Tablet</option>
-                                        <option value="Accesorios">Accesorio</option>
-                                        <option value="Otro">Otro</option>
+                                        <option defaultValue >Categoria</option>
+                                        <option value="Celular">Auriculares</option>
+                                        <option value="Tablet">Cargadores</option>
+                                        <option value="Accesorios">Accesorios celular</option>
+                                        <option value="Otro">Gadget</option>
                                     </select>
                                 </Form.Group>
                                 <div className="d-flex flex-wrap">

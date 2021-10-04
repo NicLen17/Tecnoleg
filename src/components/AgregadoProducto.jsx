@@ -176,10 +176,10 @@ export default function AgregadoProducto({ productos }) {
                                             <select className="global-btn" aria-label="Default select example"
                                                 name="categoria" onChange={(e) => handleChange(e)} required>
                                                 <option defaultValue >Categoria</option>
-                                                <option value="Celular">Celular</option>
-                                                <option value="Tablet">Tablet</option>
-                                                <option value="Accesorios">Accesorio</option>
-                                                <option value="Otro">Otro</option>
+                                                <option value="Celular">Auriculares</option>
+                                                <option value="Tablet">Cargadores</option>
+                                                <option value="Accesorios">Accesorios celular</option>
+                                                <option value="Otro">Gadget</option>
                                             </select>
                                         </Form.Group>
                                         <Row>
