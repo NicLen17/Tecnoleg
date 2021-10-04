@@ -20,7 +20,7 @@ import { NavLink, useHistory } from "react-router-dom";
 function Admin() {
     const history = useHistory();
     const localToken = JSON.parse(localStorage.getItem("token"))?.token || "";
-    const [token, setToken] = useState(localToken); //cuando no tenemos un token generado la const Token es un string vacio.
+    const [token, setToken] = useState(localToken); //cuando no tenemos un token generado la const Token es un string vacio..
     const [products, setProducts] = useState([]);
     const [mensajes, setMensajes] = useState([]);
     const [imagenes, setImagenes] = useState({});
