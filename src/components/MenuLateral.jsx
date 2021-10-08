@@ -3,7 +3,7 @@ import { Button, Offcanvas } from 'react-bootstrap';
 
 const options = [
     {
-        name: 'Filtrar',
+        name: <img style={{width: "55px", height: "35px"}} src="https://icongr.am/fontawesome/align-justify.svg?size=128&color=currentColor" alt="" />,
         scroll: true,
         backdrop: false,
     },

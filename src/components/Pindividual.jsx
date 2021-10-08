@@ -17,7 +17,7 @@ export default function PIndividual({ productosCarrito, setProductosCarrito }) {
     }, [])
 
     useEffect(() => {
-        
+
         const producto = async () => {
             const { data } = await axios.get(`/productos/${id}`);
             setProduct(data);
@@ -45,15 +45,16 @@ export default function PIndividual({ productosCarrito, setProductosCarrito }) {
     return (
         <div data-aos="fade-up" className="backgroundoP">
             <div className="pcontainers">
-            <div className="container-btn">
-                <NavLink className="ml-2 mt-2" to='/productos' as={NavLink}><img className="btnatras" src="https://icongr.am/fontawesome/arrow-circle-left.svg?size=50&color=6ea7ad" alt="atras" /></NavLink>
+                <div className="container-btn">
+                    <NavLink className="ml-2 mt-2" to='/productos' as={NavLink}><img className="btnatras" src="https://icongr.am/fontawesome/arrow-circle-left.svg?size=50&color=6ea7ad" alt="atras" /></NavLink>
                 </div>
                 <div className="pcontainer">
                     <div className="pimgcont">
-                        <img className="imgpro" src={product.img?.[0]} alt="Producto principal" />
+                        <img style={{objectFit: "cover"}} className="imgpro" src={product.img?.[0]} alt="Producto principal" />
                     </div>
                 </div>
                 <div className="contenido1">
+                    <p>Categoria: {product.categoria} </p>
                     <h2>{product.marca}  {product.modelo} <br />
                     </h2>
                     <h2>${product.price}</h2>
@@ -73,7 +74,7 @@ export default function PIndividual({ productosCarrito, setProductosCarrito }) {
                 <div className="imagenesdesc">
                     {product.img?.map((i) => (
                         <div>
-                            <img src={i} alt="Producto principal vista 1" />
+                            <img style={{objectFit: "cover"}}  src={i} alt="Producto principal vista 1" />
                         </div>))}
                 </div>
             </div>

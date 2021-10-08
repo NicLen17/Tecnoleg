@@ -36,7 +36,7 @@ export default function AgregadoProducto({ productos }) {
             setValidated(false);
 
         } catch (error) {
-                    error.response.data.msg
+            error.response.data.msg
                 ? setAlert(error.response.data.msg)
                 : setAlert(error.response.data);
         }
@@ -70,7 +70,7 @@ export default function AgregadoProducto({ productos }) {
                             {alert && <Alert variant="danger">{alert}</Alert>}
                             {alertSuccess && <Alert variant="success">{alertSuccess}</Alert>}
                             <Card style={{ height: "880px" }} className="border registercontent-a">
-                            <p style={{ marginTop: "30px", fontSize: "35px", letterSpacing: "10px" }} className="register-titulo">Agregado Producto</p>
+                                <p style={{ marginTop: "30px", fontSize: "35px", letterSpacing: "10px" }} className="register-titulo">Agregado Producto</p>
                                 <Card.Body>
                                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
                                         <Form.Group className="reginputconteineragregado" controlId="validationCustom02">
@@ -176,10 +176,10 @@ export default function AgregadoProducto({ productos }) {
                                             <select className="global-btn" aria-label="Default select example"
                                                 name="categoria" onChange={(e) => handleChange(e)} required>
                                                 <option defaultValue >Categoria</option>
-                                                <option value="Celular">Auriculares</option>
-                                                <option value="Tablet">Cargadores</option>
-                                                <option value="Accesorios">Accesorios celular</option>
-                                                <option value="Otro">Gadget</option>
+                                                <option value="Celular">Celular</option>
+                                                <option value="Tablet">Tablet</option>
+                                                <option value="Accesorios">Accesorio</option>
+                                                <option value="Otro">Otro</option>
                                             </select>
                                         </Form.Group>
                                         <Row>

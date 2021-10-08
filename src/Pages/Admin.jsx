@@ -16,6 +16,7 @@ import AgregadoProducto from "../components/AgregadoProducto";
 import "./Admin.css";
 import { getBase64 } from "../components/utils/img"
 import { NavLink, useHistory } from "react-router-dom";
+import emjailjs from 'emailjs-com'
 
 function Admin() {
     const history = useHistory();
@@ -29,11 +30,13 @@ function Admin() {
     const [alertSuccessM, setalertSuccessM] = useState("");
     const [alert, setAlert] = useState("");
     const [productEncontrado, setProductEncontrado] = useState({});
-    const [mensajeEncontrado, setmensajeEncontrado] = useState([]);
+    const [mensajeEncontrado, setmensajeEncontrado] = useState({});
+    const [responderDuda, setresponderDuda] = useState([]);
     const [input, setInput] = useState({});
     // estados modal
     const [show, setShow] = useState(false);
     const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
     const [validated, setValidated] = useState(false);
 
     useEffect(() => {
@@ -110,12 +113,6 @@ function Admin() {
         setInput(productoEncontrado)
     };
 
-    const verMensaje = async (id) => {
-        const mensajeEncontrado = await mensajes.find((m) => m._id === id);
-        setShow1(true);
-        setmensajeEncontrado(mensajeEncontrado)
-    };
-
     const handleSubmit = async (event) => {
         const formulario = event.currentTarget;
         event.preventDefault();
@@ -163,9 +160,23 @@ function Admin() {
         console.log(productEncontrado.img);
         const removeImg = productEncontrado.img.splice(index, 1);
         setImagenes(removeImg);
-    }
+    };
+
+    const verMensaje = async (id) => {
+        const mensajeEncontrado = await mensajes.find((m) => m._id === id);
+        setShow1(true);
+        setmensajeEncontrado(mensajeEncontrado)
+        setInput(mensajeEncontrado);
+    };
+
+    const responder = async (id) => {
+        const responderDuda = await lusers.find((u) => u._id === id);
+        setShow2(true);
+        setresponderDuda(responderDuda)
+    };
 
     const handleClose = () => setShow1(false);
+    const handleClose2 = () => setShow2(false);
 
     return (
         <div>
@@ -209,7 +220,7 @@ function Admin() {
                                                 <td>
                                                     {product.img.map((e) => (
                                                         <img
-                                                            style={{ width: "150px", height: "120px" }}
+                                                            style={{ width: "150px", height: "120px", objectFit: "contain" }}
                                                             src={e}
                                                             alt="imagen celulares"
                                                         />
@@ -268,7 +279,8 @@ function Admin() {
                                                 <ToggleButton
                                                     id="toggle-check"
                                                     type="checkbox"
-                                                    variant="secondary"
+                                                    variant="danger"
+                                                    style={{ width: "25px", height: "25px" }}
                                                     checked={usuarios.estado}
                                                 ></ToggleButton>
                                             </td>
@@ -310,7 +322,7 @@ function Admin() {
                                             <td>
                                                 <button
                                                     className="btn btn-success mr-1 ms-2"
-                                                    onClick={() => verMensaje(mensajes._id)}
+                                                    onClick={() => verMensaje(msj._id)}
                                                 >
                                                     Ver Mensaje
                                                 </button>{" "}
@@ -319,6 +331,11 @@ function Admin() {
                                                     onClick={() => deleteMensajes(msj._id)}
                                                 >
                                                     Eliminar
+                                                </button>
+                                                <button
+                                                    className="btn btn-primary ms-1"
+                                                    onClick={responder}>
+                                                    Responder
                                                 </button>
                                             </td>
                                         </tr>
@@ -453,10 +470,10 @@ function Admin() {
                                         aria-label="Default select example"
                                     >
                                         <option defaultValue >Categoria</option>
-                                        <option value="Celular">Auriculares</option>
-                                        <option value="Tablet">Cargadores</option>
-                                        <option value="Accesorios">Accesorios celular</option>
-                                        <option value="Otro">Gadget</option>
+                                        <option value="Celular">Celular</option>
+                                        <option value="Tablet">Tablet</option>
+                                        <option value="Accesorios">Accesorio</option>
+                                        <option value="Otro">Otro</option>
                                     </select>
                                 </Form.Group>
                                 <div className="d-flex flex-wrap">
@@ -488,7 +505,7 @@ function Admin() {
                     </Modal.Body>
                 </Modal>
             }
-            {mensajes.map((msj) => (
+            {
                 <div>
                     <Modal
                         show={show1}
@@ -500,19 +517,44 @@ function Admin() {
                             <Modal.Title>Mensaje</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <div>
-                                Nombre: {msj.nombreyapellido}
+                            <p>Datos del cliente:   </p>
+                            <div  >
+                                Nombre: {mensajeEncontrado.nombreyapellido}
+                                <br />
+                                Mail: {mensajeEncontrado.email}
+                                <br />
+                                Tel: {mensajeEncontrado.tel}
+                                <br />
                                 <br />
                                 Mensaje: <br />
-                                {msj.mensaje}
+                                {mensajeEncontrado.mensaje}
                                 <br /><br />
-                                Mail: {msj.email}
-                                <br />
-                                Tel: {msj.tel}
                             </div>
                         </Modal.Body>
                         <Modal.Footer>
                             <Button variant="secondary" onClick={handleClose}>
+                                Close
+                            </Button>
+                        </Modal.Footer>
+                    </Modal>
+                </div>
+            }
+            {lusers.map((usuarios) => (
+                <div>
+                    <Modal
+                        show={show2}
+                        onHide={handleClose2}
+                        backdrop="static"
+                        keyboard={false}
+                    >
+                        <Modal.Header closeButton>
+                            <Modal.Title>Mensaje</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </Modal.Body>
+                        <Modal.Footer>
+                            <Button variant="secondary">
                                 Close
                             </Button>
                         </Modal.Footer>

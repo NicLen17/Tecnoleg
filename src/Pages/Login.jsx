@@ -66,7 +66,7 @@ export default function Login({ setUser, setToken }) {
             name="password"
             onChange={handleChange}
             type="password"
-            placeholder="Ingrese su Password (Min. 6 digitos)"
+            placeholder="Ingrese su Contraseña (Min. 6 digitos)"
             required
           />
         </Form.Group>

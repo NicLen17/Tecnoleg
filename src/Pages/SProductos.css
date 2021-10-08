@@ -1,10 +1,17 @@
 .body-pro {
-    height: 100vh;
+    height: 100%;
 }
 
 .cards-p {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
+}
+
+.p-container {
+    margin-top: 150px;
+    margin-bottom: 200px;
 }
 
 .card-cont2 {
@@ -16,6 +23,12 @@
     transition: 0.2s;
     cursor: pointer;
     text-align: start;
+    max-width: 420px !important;
+    min-width: 420px !important;
+    width: 420px !important;
+    max-height: 500px !important;
+    min-height: 500px !important;
+    height: 500px !important;
 }
 
 .card-cont2:hover {
@@ -28,7 +41,12 @@
 }
 
 .cards-pimg {
-    max-width: 300px;
+    max-width: 300px !important;
+    min-width: 300px !important;
+    width: 300px !important;
+    max-height: 320px !important;
+    min-height: 320px !important;
+    height: 320px !important;
     border-bottom: rgb(110, 167, 173) solid 1px;
     margin-bottom: 25px;
     margin-top: 10px;
@@ -70,3 +88,4 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+

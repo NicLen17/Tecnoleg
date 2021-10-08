@@ -82,8 +82,8 @@ export default function Register({ setToken }) {
                     type="text"
                     placeholder="Nombre y Apellido"
                     className="labelform-register text-uppercase"
-                    maxLength="25"
-                    minLength="6"
+                    maxLength="10"
+                    minLength="4"
                   />
                   <Form.Control.Feedback>Ok!</Form.Control.Feedback>
                 </Form.Group>
