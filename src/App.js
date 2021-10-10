@@ -73,11 +73,11 @@ function App() {
           </Route>
 
           <Route path="/carrito" exact>
-            <Carrito />
+            <Carrito productosCarrito={productosCarrito} setProductosCarrito= {setProductosCarrito} />
           </Route>
 
           <Route path="/individual/:id" exact>
-            <Pindividual />
+            <Pindividual productosCarrito={productosCarrito} setProductosCarrito= {setProductosCarrito} />
           </Route>
 
           <Route path="/admin" exact>

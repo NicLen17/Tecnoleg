@@ -480,7 +480,7 @@ function Admin() {
                                     {productEncontrado.img?.map((i, index) => (
                                         <div>
                                             <Button variant="btn btn-white" style={{ position: "absolute" }} onClick={() => borrarImagen(index)}><img src="https://icongr.am/fontawesome/remove.svg?size=15&color=currentColor" alt="cerrar" /></Button>
-                                            <img style={{ width: "200px", height: "200px" }} src={i} alt="imagen del celular" />
+                                            <img style={{ width: "200px", height: "200px", objectFit:"cover" }} src={i} alt="imagen del celular" />
                                         </div>
                                     ))}
                                 </div>
@@ -517,8 +517,8 @@ function Admin() {
                             <Modal.Title>Mensaje</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <p>Datos del cliente:   </p>
-                            <div  >
+                            <p>Datos del cliente:</p>
+                            <div>
                                 Nombre: {mensajeEncontrado.nombreyapellido}
                                 <br />
                                 Mail: {mensajeEncontrado.email}
