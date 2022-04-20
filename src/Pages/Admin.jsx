@@ -162,21 +162,21 @@ function Admin() {
         setImagenes(removeImg);
     };
 
-    const verMensaje = async (id) => {
-        const mensajeEncontrado = await mensajes.find((m) => m._id === id);
-        setShow1(true);
-        setmensajeEncontrado(mensajeEncontrado)
-        setInput(mensajeEncontrado);
-    };
+        const verMensaje = async (id) => {
+            const mensajeEncontrado = await mensajes.find((m) => m._id === id);
+            setShow1(true);
+            setmensajeEncontrado(mensajeEncontrado)
+            setInput(mensajeEncontrado);
+        };
 
-    const responder = async (id) => {
-        const responderDuda = await lusers.find((u) => u._id === id);
-        setShow2(true);
-        setresponderDuda(responderDuda)
-    };
+        const responder = async (id) => {
+            const responderDuda = await lusers.find((u) => u._id === id);
+            setShow2(true);
+            setresponderDuda(responderDuda)
+        };
 
-    const handleClose = () => setShow1(false);
-    const handleClose2 = () => setShow2(false);
+        const handleClose = () => setShow1(false);
+        const handleClose2 = () => setShow2(false);
 
     return (
         <div>

@@ -14,6 +14,7 @@ import Seccion404 from './components/Seccion404';
 import Admin from './Pages/Admin';
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
+import Wapp from './components/Wapp';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -56,6 +57,8 @@ function App() {
           userCategory={user.category}
           logout={logout} />
 
+        <Wapp />
+
         <Switch>
 
           <Route path="/" exact>
@@ -64,6 +67,7 @@ function App() {
             <SCards />
 
           </Route>
+          
           <Route path="/productos" exact>
             <SProductos />
           </Route>

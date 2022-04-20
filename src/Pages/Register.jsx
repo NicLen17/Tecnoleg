@@ -67,7 +67,9 @@ export default function Register({ setToken }) {
         <Col xs={12} sm={8} md={6} className="mx-auto my-5">
           {alert && <Alert variant="danger">{alert}</Alert>}
           <Card className="border registercontent">
-            <p style={{ marginTop: "30px", fontSize: "35px", letterSpacing: "10px" }} className="register-titulo">Registro</p>
+            <Card.Header className="text-white">
+              <h4 className="mt-1">Crea tu cuenta</h4>
+            </Card.Header>
             <Card.Body>
               <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Group
@@ -81,9 +83,9 @@ export default function Register({ setToken }) {
                     required
                     type="text"
                     placeholder="Nombre y Apellido"
-                    className="labelform-register text-uppercase"
-                    maxLength="10"
-                    minLength="4"
+                    className="registerlabel text-uppercase"
+                    maxLength="25"
+                    minLength="6"
                   />
                   <Form.Control.Feedback>Ok!</Form.Control.Feedback>
                 </Form.Group>
@@ -98,7 +100,7 @@ export default function Register({ setToken }) {
                     maxLength="15"
                     pattern="[0-9,.]+"
                     placeholder="Celular"
-                    className="labelform-register"
+                    className="registerlabel"
                   />
                   <Form.Control.Feedback>Ok!</Form.Control.Feedback>
                 </Form.Group>
@@ -114,7 +116,7 @@ export default function Register({ setToken }) {
                     type="text"
                     placeholder="Email"
                     maxLength="40"
-                    className="labelform-register text-uppercase"
+                    className="registerlabel text-uppercase"
                   />
                   <Form.Control.Feedback>Ok!</Form.Control.Feedback>
                 </Form.Group>
@@ -131,7 +133,7 @@ export default function Register({ setToken }) {
                       type="password"
                       placeholder="****"
                       aria-describedby="inputGroupPrepend"
-                      className="labelform-register"
+                      className="registerlabel"
                       required
                     />
                     <Form.Control.Feedback type="invalid">
@@ -146,14 +148,13 @@ export default function Register({ setToken }) {
                   <Form.Label>Confirmar Password</Form.Label>
                   <InputGroup hasValidation>
                     <Form.Control
-                      style={{"width":"525px"}}
                       minLength="6"
                       name="password1"
                       onChange={(e) => handleChange(e)}
                       type="password"
                       placeholder="****"
                       aria-describedby="inputGroupPrepend"
-                      className="labelform-register"
+                      className="registerlabel"
                       required
                     />
                     <Form.Control.Feedback type="invalid">
@@ -163,8 +164,7 @@ export default function Register({ setToken }) {
                 </Form.Group>
                 <Row>
                   <Button
-                    style={{"width": "250px", "margin": "auto"}}
-                    className="global-btn mt-4 mb-4"
+                    className="registerbut mt-3"
                     variant="loginbut"
                     type="submit"
                   >
